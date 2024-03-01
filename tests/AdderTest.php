@@ -9,6 +9,6 @@ final class AdderTest extends TestCase
 	{
 		$result = \Adder\add(1, 2 );
 
-		$this->assertSame(2, $result);
+		$this->assertSame(3, $result);
 	}
 }
