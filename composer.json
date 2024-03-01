@@ -1,0 +1,10 @@
+{
+    "require-dev": {
+        "squizlabs/php_codesniffer": "*",
+        "phpunit/phpunit": "^11.0"
+    },
+    "scripts": {
+        "check-code": "phpcs -s ./index.php",
+        "test": "phpunit ./tests"
+    }
+}
