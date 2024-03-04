@@ -8,8 +8,8 @@ on:
     branches:
       - "*"
 jobs:
-  Build-Artifact-Action:
-    name: Build-Artifact-Action
+  RunTestsAndPHPCS:
+    name: Run-Tests-And-PHPCS
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
