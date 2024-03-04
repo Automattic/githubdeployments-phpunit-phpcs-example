@@ -1,0 +1,22 @@
+name: Run Tests and PHPCS
+
+on:
+  push:
+    branches:
+      - "*"
+  pull_request:
+    branches:
+      - "*"
+jobs:
+  Build-Artifact-Action:
+    name: Build-Artifact-Action
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - uses: php-actions/composer@v6
+      - uses: php-actions/composer@v6
+        with:
+          command: check-code
+      - uses: php-actions/composer@v6
+        with:
+          command: test
