@@ -4,7 +4,7 @@
         "phpunit/phpunit": "^11.0"
     },
     "scripts": {
-        "check-code": "phpcs -s ./index.php",
+        "check-code": "phpcs -s ./index.php && phpcs -s adder.php && phpcs -s ./tests",
         "test": "phpunit ./tests"
     }
 }
